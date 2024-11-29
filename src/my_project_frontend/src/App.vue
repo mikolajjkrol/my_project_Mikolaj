@@ -19,17 +19,22 @@ getChat()
 </script>
 
 <template>
-  <main>
+  <main class="container mx-auto"><div id="cont">
     <img src="/logo2.svg" alt="DFINITY logo" />
     <br />
     <br />
     <form action="#" @submit="handleSubmit">
-      <label for="msg">Enter your msg: &nbsp;</label>
-      <input id="msg" alt="msg" type="text" />
+      <input id="msg" alt="msg" type="text" placeholder="Enter here" />
+      <br><br>
       <button type="submit">Click Me!</button>
     </form>
+    <br>
+    <hr></hr>
+    <br>
     <section id="displasyChat">
       <div v-for="msg in displasyChat">{{ msg }}</div>
     </section>
-  </main>
+    <br>
+    <a href="https://www.youtube.com/watch?v=frAhxXbLetk">KLIK</a>
+  </div></main>
 </template>
